@@ -1,7 +1,17 @@
 import Head from "next/head";
 import Header from "../components/Header";
 
-export default function Home() {
+import { sanityClient } from "../sanity";
+import { Post } from "../typings";
+
+interface Props {
+  posts: [Post];
+}
+
+export default function Home({ posts }: Props) {
+  //Getting the posts
+  console.log(posts);
+
   return (
     <div className="max-w-7xl mx-auto">
       <Head>
@@ -33,6 +43,30 @@ export default function Home() {
           alt=""
         />
       </div>
+
+      {/* Posts */}
     </div>
   );
 }
+
+// Enabling server side rendering
+export const getServerSideProps = async () => {
+  const query = `
+  *[_type == "post"]{
+    _id,
+    title,
+    author-> {
+      name,
+      image,
+    },
+    description,
+    mainImage,
+    slug
+  }`;
+
+  //Fetching posts
+  const posts = await sanityClient.fetch(query);
+
+  //Passing posts to frontend
+  return { props: { posts } };
+};
