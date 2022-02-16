@@ -5,6 +5,7 @@ import { Post } from "../../typings";
 import PortableText from "react-portable-text";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useState } from "react";
+import SyntaxHighlighter from 'react-syntax-highlighter';
 
 interface IFormInput {
   _id: string;
@@ -88,6 +89,11 @@ function Post({ post }: Props) {
                   {children}
                 </a>
               ),
+              code: ({language, code}:any) => (
+                <SyntaxHighlighter language={language || 'text'}>
+                  {code}
+                </SyntaxHighlighter>
+              )
             }}
           />
         </div>
