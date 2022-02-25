@@ -25,6 +25,7 @@ const serializers = {
 				{props.node.code}
 			</SyntaxHighlighter>
 		),
+	}
 
 		h1: (props: any) => (
 			<h1 className="text-4xl font-bold my-5" {...props} />
@@ -43,7 +44,7 @@ const serializers = {
 				{children}
 			</a>
 		),
-	},
+	
 };
 
 interface Props {
