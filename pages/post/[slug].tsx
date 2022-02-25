@@ -5,7 +5,7 @@ import { Post } from "../../typings";
 import PortableText from "react-portable-text";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useState } from "react";
-import BlockContent from "@sanity/block-content-to-react";
+//import BlockContent from "@sanity/block-content-to-react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 
 interface IFormInput {
@@ -18,16 +18,23 @@ interface IFormInput {
 const serializers = {
 	types: {
 		code: (props: any) => (
-			<SyntaxHighlighter language={props.node.language || "text"}>
+			<SyntaxHighlighter
+				language={props.node.language || "text"}
+				className="my-10"
+			>
 				{props.node.code}
 			</SyntaxHighlighter>
 		),
+
 		h1: (props: any) => (
-			<h1 className="text-2xl font-bold my-5" {...props} />
+			<h1 className="text-4xl font-bold my-5" {...props} />
 		),
 		h2: (props: any) => (
-			<h2 className="text-xl font-bold my-5" {...props} />
+			<h2 className="text-3xl font-bold my-5" {...props} />
 		),
+		h3: (props: any) => {
+			return <h3 className="text-2xl font-bold my-5" {...props} />;
+		},
 		li: ({ children }: any) => (
 			<li className="ml-4 list-disc">{children}</li>
 		),
@@ -100,10 +107,10 @@ function Post({ post }: Props) {
 
 				{/* Post Body */}
 				<div className="mt-10">
-					<BlockContent
+					<PortableText
 						dataset={process.env.NEXT_PUBLIC_SANITY_DATASET}
 						projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}
-						blocks={post.body}
+						content={post.body}
 						serializers={serializers}
 					/>
 				</div>
