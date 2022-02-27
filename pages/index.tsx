@@ -26,20 +26,17 @@ export default function Home({ posts }: Props) {
           {/* Tagline */}
           <h1 className="text-6xl max-w-xl font-serif">
             <span className="underline decoration-black decoration-4">
-              Medium
+              Code with harsh
             </span>{" "}
-            is a place to write read and connect
+            is a place for developers by a developer
           </h1>
-          <h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-            veritatis libero nihil tenetur aliquid atque.
-          </h2>
+          {/* <h2></h2> */}
         </div>
-        <img
+        {/* <img
           className="hidden md:inline-flex h-32 lg:h-full"
           src="https://accountabilitylab.org/wp-content/uploads/2020/03/Medium-logo.png"
           alt=""
-        />
+        /> */}
       </div>
 
       {/* Posts */}
