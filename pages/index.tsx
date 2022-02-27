@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Header from "../components/Header";
+import logo from '../public/logo.png'
 
 import { sanityClient, urlFor } from "../sanity";
 import { Post } from "../typings";
@@ -32,11 +33,11 @@ export default function Home({ posts }: Props) {
           </h1>
           {/* <h2></h2> */}
         </div>
-        {/* <img
+        <img
           className="hidden md:inline-flex h-32 lg:h-full"
-          src="https://accountabilitylab.org/wp-content/uploads/2020/03/Medium-logo.png"
-          alt=""
-        /> */}
+          src={logo}
+                   alt=""
+        />
       </div>
 
       {/* Posts */}
