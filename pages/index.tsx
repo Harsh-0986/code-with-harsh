@@ -34,7 +34,7 @@ export default function Home({ posts }: Props) {
         </div>
         <img
           className="hidden md:inline-flex h-32 lg:h-full"
-          src="https://github.com/Harsh-0986/code-with-harsh/blob/main/public/logo.PNG"
+          src="https://raw.githubusercontent.com/Harsh-0986/code-with-harsh/6b6ec995ff688901c2f5e1d5aa64f3a91e121820/public/logo.PNG"
           alt=""
         />
       </div>
