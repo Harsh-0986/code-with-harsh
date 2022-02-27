@@ -7,6 +7,7 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { useState } from "react";
 //import BlockContent from "@sanity/block-content-to-react";
 import SyntaxHighlighter from "react-syntax-highlighter";
+import Head from 'next/head'
 
 interface IFormInput {
 	_id: string;
@@ -71,7 +72,10 @@ function Post({ post }: Props) {
 			});
 	};
 
-	return (
+	return (<>
+		<Head>
+			<title>{post.title}</title>
+		</Head>
 		<main>
 			<Header />
 
@@ -153,7 +157,7 @@ function Post({ post }: Props) {
 							className="shadow border rounded py-2 px-3 form-input mt-1 block w-full ring-yellow-500 outline-none focus:ring"
 							placeholder="Name"
 							type="text"
-						/>
+							/>
 					</label>
 					<label className="block mb-5">
 						<span className="text-gray-700 ">Email</span>
@@ -162,7 +166,7 @@ function Post({ post }: Props) {
 							className="shadow border rounded py-2 px-3 form-input mt-1 block w-full outline-none ring-yellow-500 focus:ring"
 							placeholder="Email"
 							type="email"
-						/>
+							/>
 					</label>
 					<label className="block mb-5">
 						<span className="text-gray-700 ">Comment</span>
@@ -217,6 +221,7 @@ function Post({ post }: Props) {
 				))}
 			</div>
 		</main>
+				</>
 	);
 }
 export default Post;
