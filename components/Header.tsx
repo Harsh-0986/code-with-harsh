@@ -13,7 +13,7 @@ function Header() {
           <img
             src="https://raw.githubusercontent.com/Harsh-0986/code-with-harsh/main/public/logo.PNG"
             alt=""
-            className="object-contain w-44 cursor-pointer h-16"
+            className="object-contain w-44 cursor-pointer"
           />
         </Link>
         {/* Links */}
