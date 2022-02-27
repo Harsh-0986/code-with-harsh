@@ -1,15 +1,19 @@
 import Link from "next/link";
 
 function Header() {
+
+  const blog_name="<Code with harsh />"
+
   return (
-    <header className="flex justify-between p-5 max-w-7xl mx-auto">
+    <header className="flex justify-between p-5 max-w-7xl mx-auto bg-[#F7F7F7]" >
       <div className="flex items-center space-x-5">
         {/* Logo */}
         <Link href="/">
+          {/* <h2 className="text-2xl blog_name bg-blue-200 p-5 rounded-full">{blog_name}</h2> */}
           <img
-            src="https://raw.githubusercontent.com/Harsh-0986/code-with-harsh/main/public/logo.png"
+            src="https://raw.githubusercontent.com/Harsh-0986/code-with-harsh/main/public/logo.PNG"
             alt=""
-            className="object-contain w-44 cursor-pointer"
+            className="object-contain w-44 cursor-pointer h-16"
           />
         </Link>
         {/* Links */}

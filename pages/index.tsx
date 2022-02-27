@@ -11,7 +11,7 @@ interface Props {
 
 export default function Home({ posts }: Props) {
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="max-w-7xl mx-auto bg-[#F7F7F7]">
       <Head>
         <title>Code with harsh</title>
         <link rel="icon" href="/favicon.ico" />
@@ -21,7 +21,7 @@ export default function Home({ posts }: Props) {
       <Header />
 
       {/* Main Banner */}
-      <div className="flex justify-between items-center bg-yellow-400 border-y border-black py-10 lg:py-0">
+      <div className="flex justify-between items-center bg-[#F7F7F7] border-bottom border-black py-10 lg:py-0">
         <div className="p-10 space-y-5">
           {/* Tagline  */}
           <h1 className="text-4xl max-w-xl font-serif">
@@ -36,7 +36,7 @@ export default function Home({ posts }: Props) {
         </div>
         <img
           className="hidden md:inline-flex h-32 lg:h-full mx-10"
-          src="https://raw.githubusercontent.com/Harsh-0986/code-with-harsh/main/public/logo.png"
+          src="https://raw.githubusercontent.com/Harsh-0986/code-with-harsh/main/public/logo.PNG"
           alt=""
         />
       </div> 

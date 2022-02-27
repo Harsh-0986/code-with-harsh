@@ -74,7 +74,7 @@ function Post({ post }: Props) {
 
 	return (<>
 		<Head>
-			<title>`${post.title} by ${post.author.name}`</title>
+			<title>{`${post.title} by ${post.author.name}`}"</title>
 		</Head>
 		<main>
 			<Header />
