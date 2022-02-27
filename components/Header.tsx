@@ -7,7 +7,7 @@ function Header() {
         {/* Logo */}
         <Link href="/">
           <img
-            src="https://links.papareact.com/yvf"
+            src="https://raw.githubusercontent.com/Harsh-0986/code-with-harsh/main/public/logo.png"
             alt=""
             className="object-contain w-44 cursor-pointer"
           />
