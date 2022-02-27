@@ -20,7 +20,7 @@ const serializers = {
 		code: (props: any) => (
 			<SyntaxHighlighter
 				language={props.node.language || "text"}
-				className="my-10"
+				className="m-10"
 			>
 				{props.node.code}
 			</SyntaxHighlighter>
