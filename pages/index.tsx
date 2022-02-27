@@ -25,12 +25,14 @@ export default function Home({ posts }: Props) {
         <div className="px-10 space-y-5">
           {/* Tagline */}
           <h1 className="text-6xl max-w-xl font-serif">
-            <span className="underline decoration-black decoration-4">
+            <span className="underline decoration-black decoration-4 my-12">
               Code with harsh
             </span>{" "}
             is a place for developers by a developer
           </h1>
-          {/* <h2></h2> */}
+          {/* <h2>
+            
+          </h2> */}
         </div>
         <img
           className="hidden md:inline-flex h-32 lg:h-full"
