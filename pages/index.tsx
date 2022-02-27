@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Header from "../components/Header";
-import logo from '../public/logo.png'
+import Logo from '../public/logo.png'
 
 import { sanityClient, urlFor } from "../sanity";
 import { Post } from "../typings";
@@ -35,8 +35,8 @@ export default function Home({ posts }: Props) {
         </div>
         <img
           className="hidden md:inline-flex h-32 lg:h-full"
-          src={logo}
-                   alt=""
+          src={Logo}
+          alt=""
         />
       </div>
 
