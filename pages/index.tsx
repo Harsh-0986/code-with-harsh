@@ -21,25 +21,25 @@ export default function Home({ posts }: Props) {
       <Header />
 
       {/* Main Banner */}
-      <div className="flex justify-between items-center bg-yellow-400 border-y border-black py-10 lg:py-0">
+      {/* <div className="flex justify-between items-center bg-yellow-400 border-y border-black py-10 lg:py-0">
         <div className="p-10 space-y-5">
-          {/* Tagline */}
+          Tagline 
           <h1 className="text-6xl max-w-xl font-serif">
             <span className="underline decoration-black decoration-4 my-12">
               Code with harsh
             </span>{" "}
             is a place for developers by a developer
           </h1>
-          {/* <h2>
+           <h2>
             
-          </h2> */}
+          </h2> 
         </div>
         <img
           className="hidden md:inline-flex h-32 lg:h-full mx-10"
           src="https://raw.githubusercontent.com/Harsh-0986/code-with-harsh/main/public/logo.png"
           alt=""
         />
-      </div>
+      </div> */}
 
       {/* Posts */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 p-2 md:p-6">
