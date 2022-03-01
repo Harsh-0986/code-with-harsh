@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 function Header() {
@@ -12,7 +11,7 @@ function Header() {
         {/* Logo */}
         <Link href="/">
           {/* <h2 className="text-2xl blog_name bg-blue-200 p-5 rounded-full">{blog_name}</h2> */}
-          <Image
+          <img
             src="https://raw.githubusercontent.com/Harsh-0986/code-with-harsh/main/public/logo.PNG"
             alt=""
             className="object-contain w-44 cursor-pointer h-12"
