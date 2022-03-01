@@ -21,7 +21,7 @@ export default function Home({ posts }: Props) {
       <Header />
 
       {/* Main Banner */}
-      <div className="flex justify-between items-center bg-[#F7F7F7] border-bottom border-black py-10 lg:py-0">
+      <div className="flex justify-between items-center bg-[#F7F7F7] border-bottom border-black py-5 lg:py-0">
         <div className="p-10 space-y-5">
           {/* Tagline  */}
           <h1 className="text-4xl max-w-xl font-serif">
