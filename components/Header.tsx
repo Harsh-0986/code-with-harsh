@@ -6,7 +6,7 @@ function Header() {
 
   return (
     <header className="flex justify-between p-5 max-w-7xl mx-auto bg-[#F7F7F7]" >
-      <div className="flex items-center space-x-5">
+      <div className="flex items-center space-x-5 mx-auto lg:mx-0">
         
         {/* Logo */}
         <Link href="/">
@@ -14,7 +14,7 @@ function Header() {
           <img
             src="https://raw.githubusercontent.com/Harsh-0986/code-with-harsh/main/public/logo.PNG"
             alt=""
-            className="object-contain w-44 cursor-pointer mx-auto lg:mx-0"
+            className="object-contain w-44 cursor-pointer "
             />
         </Link>
         {/* Links */}
