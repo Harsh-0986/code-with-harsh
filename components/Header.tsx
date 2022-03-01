@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 function Header() {
@@ -7,14 +8,15 @@ function Header() {
   return (
     <header className="flex justify-between p-5 max-w-7xl mx-auto bg-[#F7F7F7]" >
       <div className="flex items-center space-x-5">
+        
         {/* Logo */}
         <Link href="/">
           {/* <h2 className="text-2xl blog_name bg-blue-200 p-5 rounded-full">{blog_name}</h2> */}
-          <img
+          <Image
             src="https://raw.githubusercontent.com/Harsh-0986/code-with-harsh/main/public/logo.PNG"
             alt=""
-            className="object-contain w-44 cursor-pointer"
-          />
+            className="object-contain w-44 cursor-pointer h-12"
+            />
         </Link>
         {/* Links */}
         <div className="hidden md:inline-flex items-center space-x-5">
