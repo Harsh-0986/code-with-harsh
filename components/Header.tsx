@@ -14,7 +14,7 @@ function Header() {
           <img
             src="https://raw.githubusercontent.com/Harsh-0986/code-with-harsh/main/public/logo.PNG"
             alt=""
-            className="object-contain w-44 cursor-pointer lg:mx-auto"
+            className="object-contain w-44 cursor-pointer mx-auto lg:mx-0"
             />
         </Link>
         {/* Links */}
