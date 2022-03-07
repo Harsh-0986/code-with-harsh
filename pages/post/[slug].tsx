@@ -292,5 +292,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 		},
 		// Update the old cache after 1 day
 		// revalidate: 86400,
+		revalidate: 30,
 	};
 };
