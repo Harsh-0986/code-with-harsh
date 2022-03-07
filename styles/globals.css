@@ -39,3 +39,8 @@
 html {
   background-color: #f7f7f7;
 }
+
+code{
+  background-color: e3dddd;
+  margin-top: 5px;
+}
