@@ -37,6 +37,9 @@ const serializers = {
 		h3: (props: any) => {
 			return <h3 className="text-2xl font-bold my-5" {...props} />;
 		},
+		h4: (props: any) => {
+			return <h4 className="text-xl font-bold my-5" {...props} />	
+		},
 		li: ({ children }: any) => (
 			<li className="ml-4 list-disc">{children}</li>
 		),
