@@ -2,10 +2,10 @@ import { GetStaticProps } from "next";
 import Header from "../../components/Header";
 import { sanityClient, urlFor } from "../../sanity";
 import { Post } from "../../typings";
-import PortableText from "react-portable-text";
+//import PortableText from "react-portable-text";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useState } from "react";
-//import BlockContent from "@sanity/block-content-to-react";
+import BlockContent from "@sanity/block-content-to-react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import Head from "next/head";
 
@@ -107,10 +107,10 @@ function Post({ post }: Props) {
 
           {/* Post Body */}
           <div className="mt-10">
-            <PortableText
+            <BlockContent
               dataset={process.env.NEXT_PUBLIC_SANITY_DATASET}
               projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}
-              content={post.body}
+              blocks={post.body}
               serializers={serializers}
             />
           </div>
