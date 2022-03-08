@@ -24,6 +24,10 @@ export default {
       options: {
         hotspot: true,
       },
+    },  
+    {
+      type: "code",
+      title: "code editor"
     },
     {
       name: 'bio',
