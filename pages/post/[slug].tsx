@@ -18,15 +18,14 @@ interface IFormInput {
 
 const serializers = {
   types: {
-    code: (props: any) => {
-      if (!props.node.code) return null;
-
+    code: ({ node = {} }: any) => {
+      const { code, language } = node;
+      if (!code) {
+        return null;
+      }
       return (
-        <SyntaxHighlighter
-          language={props.node.language || "text"}
-          className="m-10"
-        >
-          {props.node.code}
+        <SyntaxHighlighter language={language || "text"}>
+          {code}
         </SyntaxHighlighter>
       );
     },
