@@ -19,9 +19,9 @@ function Header() {
         </Link>
         {/* Links */}
         <div className="hidden md:inline-flex items-center space-x-5">
-          <h3>About</h3>
-          <h3>Contact</h3>
-          <h3 className="text-white bg-green-600 px-4  py-1 rounded-full">
+          <h3 className="text-xl">About</h3>
+          <h3 className="text-xl">Contact</h3>
+          <h3 className="text-xl text-white bg-green-600 px-4  py-1 rounded-full">
             Follow
           </h3>
         </div>
@@ -29,8 +29,8 @@ function Header() {
 
       {/* Login and sign up */}
       <div className="hidden md:flex items-center space-x-5 text-green-600">
-        <h3>Sign In</h3>
-        <h3 className="border px-4 py-1 rounded-full border-green-600 sm:text-sm">
+        <h3 className="text-xl">Sign In</h3>
+        <h3 className="text-xl border px-4 py-1 rounded-full border-green-600 sm:text-sm">
           Get started
         </h3>
       </div>
