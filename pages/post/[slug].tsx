@@ -8,6 +8,7 @@ import { useState } from "react";
 import BlockContent from "@sanity/block-content-to-react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import Head from "next/head";
+import '../../styles/slug.css'
 
 interface IFormInput {
   _id: string;
